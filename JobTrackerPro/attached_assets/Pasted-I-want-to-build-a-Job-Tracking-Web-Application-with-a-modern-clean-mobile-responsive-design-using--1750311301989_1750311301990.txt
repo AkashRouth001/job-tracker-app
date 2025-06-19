@@ -1,0 +1,52 @@
+I want to build a Job Tracking Web Application with a modern, clean, mobile-responsive design using React and Tailwind CSS (or similar). The website should include a dashboard to track job applications, a form to add jobs, options to edit/update entries, upload resumes, and basic reminder functionality including Google Calendar support.
+
+Features and Structure:
+
+1. Main Dashboard Page:
+- Display all job applications as cards or a table.
+- Each entry should show:
+  - Company Name
+  - Job Role
+  - Date Applied
+  - Source (LinkedIn, Naukri, Company Website, Google Jobs, Others)
+  - Application Status (Applied / Rejected / Interview Scheduled / Offered)
+  - Notes
+  - Resume File Uploaded (show file name with a download button)
+
+2. Job Application Form Page:
+- Form Fields:
+  - Company Name (text)
+  - Job Role (text)
+  - Date Applied (date picker)
+  - Source (dropdown: LinkedIn, Naukri, Company Website, Google Jobs, Others)
+    - If "Others" is selected, show a custom input field for manual entry
+  - Resume Upload (PDF only)
+    - The uploaded resume should be downloadable later from the dashboard
+  - Notes (textarea)
+  - Status (dropdown: Applied, Interview Scheduled, Rejected, Offered)
+    - If "Interview Scheduled" is selected:
+      - Input field to specify the interview round (e.g., TR, HR, MR, Coding, etc.)
+      - Date/Time input for expected result announcement
+      - The result date should simulate a reminder, and also provide the option to add it to Google Calendar
+
+3. Edit Application Option:
+- Ability to edit any existing application (update status, change resume, notes, source, etc.)
+
+4. Status Filter:
+- Buttons or dropdown to filter job applications by status:
+  - All
+  - Applied
+  - Interview Scheduled
+  - Rejected
+  - Offered
+
+5. Design Requirements:
+- Clean UI using Tailwind CSS or Chakra UI
+- Mobile-friendly, responsive layout
+- Use icons or color badges for each status
+- After uploading a resume, show the file name and a download button
+- Show the interview round and result date clearly
+
+6. Reminder and Notification Logic:
+- When a "Result Date" is provided, simulate a notification reminder
+- Also provide an "Add to Google Calendar" button that allows adding the event directly to the user’s Google Calendar with title, date, and description
